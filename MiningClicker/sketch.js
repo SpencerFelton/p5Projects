@@ -1,7 +1,7 @@
 function setup(){
-
+  img = loadImage('Images/rock.png');
 }
 
 function draw(){
-  rect(30, 20, 55, 55);
+  image(img, 0, 0);
 }
