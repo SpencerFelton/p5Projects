@@ -7,6 +7,7 @@ class Rock{
     this.hp = 100;
     this.maxHP = 100;
     this.state = ["Images/rock100.png", "Images/rock75.png", "Images/rock50.png", "Images/rock25.png"];
+    this.baseYield = 1;
   }
 
 
@@ -25,6 +26,7 @@ class Rock{
       var state = 0
       if (hpPercent < 0){
         this.hp = 100;
+        player.stone += this.baseYield;
       }
     }
     return state;
